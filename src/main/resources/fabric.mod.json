@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "nayomy-visuals",
+	"version": "${version}",
+	"name": "Nayomy Visuals",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nayomy-visuals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nayomy.visuals.NayomyVisuals"
+		],
+		"client": [
+			"nayomy.visuals.client.NayomyVisualsClient"
+		]
+	},
+	"mixins": [
+		"nayomy-visuals.mixins.json"
+	],
+	"accessWidener": "nayomy-visuals.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
